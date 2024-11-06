@@ -1,0 +1,94 @@
+.footer{
+    position: relative;
+    background-color: #ffffff; /* Серый фон */
+    width: 100%;
+    overflow: hidden;
+}
+
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 110px;
+    background:  var(--color-gray-elements);;
+}
+.footer-contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0px 130px;
+}
+.footer-contacts_title{
+    color: #000000;
+}
+
+.footer-contacts_container-list{
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_svg{
+    transition: fill 0.5s;
+    fill: none;
+    width: 20px;
+    height: 20px;
+}
+.footer-contacts_list-item .footer_svg {
+    fill: none;
+    transition: fill 0.5s; /* Плавный переход для fill */
+}
+
+.footer-contacts_list-item:hover .footer_svg {
+    fill: var(--color-blue-elements); /* Цвет при наведении */
+}
+.footer-contacts_list-link{
+    color: #000000;
+    transition: 0.5s;
+    font-size: 25px;
+    font-weight: 700;
+}
+.footer-contacts_list-link:hover{
+    color:   var(--color-blue-elements);
+}
+.footer-contacts_list-item_first{
+    color: var(--color-blue-elements);
+    font-size: 25px;
+    font-weight: 700;
+}
+.footer-contacts_map{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+background-color: #ffffff;
+border-radius: 15px;
+}
+
+.footer_bot-info{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #2e2e2e;
+    color: #ffffff;
+}
+
+.footer-contacts_title{
+    margin-bottom: 20px;
+        }
+@media (max-width: 500px) {
+    .footer-contacts_map{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .footer-contacts{
+padding: 20px 0;
+    }
+
+    .footer_bot-info{
+        padding: 0 10px;
+    }
+  }

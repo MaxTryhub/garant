@@ -1,0 +1,122 @@
+.services_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 0;
+}
+
+.services-title {
+  color: black;
+  padding: 0 0 50px 0;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  max-width: 1400px; /* Макс. ширина для центрирования */
+}
+
+.services-item {
+  display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  color: black;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  width: calc(33.33% - 20px); /* Ширина для трех колонок */
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.services-item_title{
+  color:   var(--color-blue-elements);
+  padding: 10px 0;
+
+  font-size: 22px;
+}
+.services-item_text{
+  text-align: justify;
+}
+.services-item_text-container{
+  height: 230px;
+}
+
+/* Обеспечьте адаптивность */
+@media (max-width: 899px) {
+  .services-item {
+    width: calc(50% - 20px); /* Две колонки на средних экранах */
+  }
+}
+
+@media (max-width: 599px) {
+  .services-list{
+    padding: 10px;
+  }
+  .services-item {
+    width: 100%; /* Одна колонка на маленьких экранах */
+  }
+}
+
+/* Ensure images are responsive */
+.services-img {
+  width: 100%;
+  height: 400px;
+}
+
+/* Force every third item to take the full row */
+
+/* Responsive adjustments */
+@media (max-width: 599px) {
+  .services-item {
+      width: 100%; /* One item per row on smaller screens */
+  }
+}
+.image-gallery {
+  display: flex;
+  justify-content: center; /* Center the entire gallery */
+  align-items: center; /* Align items vertically */
+}
+.services_click-container{
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.services_click-btn{
+  padding: 15px 0 5px 0;
+  color: var(--color-blue-elements);
+  font-weight: 700;
+  font-size: 22px;
+  transition:  0.3s ease;
+}
+
+.border-line{
+width: 115px;
+transition: 0.5s;
+border-bottom: 5px solid;
+}
+
+
+
+.services_click-container:hover .border-line{
+  width: 150px;
+}
+
+.services_click-btn:hover{
+  color: rgb(43 18 206);
+
+}
+
+
+@media (max-width: 500px) {
+  .services_click-container::after {
+    left: 138px;
+  }
+  .services_click-container:hover::after {
+    left: 105px; /* Сдвигаем влево, чтобы он выглядел симметрично */
+  }
+}

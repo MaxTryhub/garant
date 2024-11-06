@@ -1,0 +1,220 @@
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  background: #202020c7;
+}
+
+.modal-goods-info {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    width: 400px;
+    height: 100px;
+    margin: auto;
+    z-index: 1000;
+    box-shadow: 0px 3px 8px 7px rgb(0 0 0 / 8%);
+    border-radius: 5px;
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .modal {
+      width: calc(90%) !important;
+      /* Расчет 50% от ширины экрана с учетом отступов */
+    }
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #ffffff;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    z-index: 1000;
+    box-shadow: 0px 3px 8px 7px rgb(0 0 0 / 8%);
+    border-radius: 5px;
+  }
+  .modal-content{
+    padding-top: 20px;
+  }
+
+  .modal-end{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #ffffff;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    z-index: 1000;
+    box-shadow: 0px 3px 8px 7px rgb(0 0 0 / 8%);
+    border-radius: 5px;
+  }
+  .modal-content-end{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .dneprosila-img-modal {
+    position: absolute;
+    top: 5px;
+    height: 25px;
+    left: 5px;
+  }
+  
+  .modal-form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .close-btn {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border: 2px solid rgb(0 0 0 / 18%);
+    background: #ffffff;
+  }
+  
+  .svg-modal {
+    box-sizing: border-box;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    cursor: pointer;
+
+  }
+  .cls-1{
+    transition: 0.5s;
+  }
+  
+  .svg-modal:hover .cls-1 {
+    stroke: var(--color-blue-elements);
+  }
+  
+  .input-name {
+    width: 200px;
+    padding: 12px 16px;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transition: border 400ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+  }
+  
+  .input-name.invalid {
+    border-color: var(--color-blue-elements);
+    outline: none;
+  }
+  
+  .modal-text-input {
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: .03em;
+    width: 200px;
+    height: 70px;
+    font-size: 14px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border 400ms cubic-bezier(0.4, 0, 0.2, 1);
+    resize: none;
+    padding: 12px 16px;
+    outline: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transition: border 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  
+  
+  
+  .modal-text-input.invalid {
+    border-color: var(--color-blue-elements);
+    outline: none;
+  }
+  
+  .form-field {
+    margin-bottom: 8px;
+  }
+  
+  .input-btn {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: .06em;
+    width: 200px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 32px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color:var(--color-blue-elements);
+    transition: box-shadow 400ms linear;
+    box-shadow: 0px 3px 8px 7px rgb(0 0 0 / 8%);
+  }
+  
+  .input-btn:hover {
+    box-shadow: 0px 6px 2px 5px rgb(0 0 0 / 8%);
+  }
+
+  .form-star{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: flex-start;
+  }
+  .form-star-text{
+    font-size: 14px;
+  }
+  .form-star-text span{
+    color: red;
+  }
+
+  .modal-title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #2c2c2c;
+    color: #ffffff;
+    height: 28%;
+    align-items: center;
+  }
+  .modal-text-end{
+    text-align: center;
+    font-size: 23px;
+    font-weight: 700;
+  }

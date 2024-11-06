@@ -1,0 +1,41 @@
+.gallery_container{
+  padding: 50px 0;
+}
+
+.gallery_container .image-gallery-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* изображение заполняет контейнер, сохраняя пропорции */
+  max-height: 500px; /* или любой желаемый фиксированный размер */
+}
+
+.gallery_container .image-gallery-slide {
+  width: 100%;
+  height: 500px; /* задайте нужную высоту для области галереи */
+}
+  .image-gallery-image {
+    max-width: 100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+.gallery_container-title{
+    color: black;
+    padding: 0 0 50px 0;
+}
+.image-gallery-swipe{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+
+@media (max-width: 500px) {
+  .image-gallery-image{
+    height: 250px;
+    }
+    .gallery_container .image-gallery-slide {
+      width: 95vw;
+    }
+    .image-gallery-thumbnails-container{
+      width: 200px;
+    }
+}
